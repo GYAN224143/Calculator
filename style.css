@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.calculator {
+  margin-top: 20px;
+  width: 540px;
+  height: auto;
+  border-radius: 5px;
+
+  background-color: rgb(234, 231, 227);
+  text-align: center;
+}
+h1 {
+  background-color: black;
+  margin: 20px 10px 15px 10px;
+  color: white;
+  padding: 5px 0;
+  border-radius: 2px;
+}
+.container {
+  padding: 5px 0;
+  width: 98%;
+  height: 10vh;
+  margin: 1%;
+  background-color: rgb(251, 248, 248);
+  border-radius: 5px;
+}
+div#display {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+p.display {
+  margin-right: 5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.btn-container {
+  margin: 6px;
+  display: grid;
+  gap: 2px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+.button,
+.clearBtn,
+.backspace,
+.buttonresult {
+  background-color: white;
+  width: 100%;
+  padding: 10px 0;
+  height: inherit;
+  border-radius: 2px;
+}
+.button:hover,
+.clearBtn:hover,
+.backspace:hover {
+  background-color: rgb(246, 205, 129);
+  cursor: pointer;
+}
+.buttonresult,
+.clearBtn {
+  background-color: white;
+  width: 100%;
+  padding: 10px 0;
+  height: inherit;
+  border-radius: 2px;
+}
+.buttonresult:hover {
+  cursor: pointer;
+}
+.button:nth-last-child(3) {
+  grid-column: 1/3;
+}
+.button:last-child,
+.buttonresult {
+  background-color: rgb(133, 46, 46);
+  color: white;
+}
+.button:last-child:hover,
+.buttonresult:hover {
+  background-color: rgb(230, 24, 24);
+  color: white;
+}
+.btn-container div:nth-last-child(4n) {
+  background-color: rgb(133, 46, 46);
+  color: white;
+}
+.btn-container div:nth-last-child(4n):hover {
+  background-color: rgb(230, 24, 24);
+  color: white;
+}
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
